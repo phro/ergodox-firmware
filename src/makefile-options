@@ -1,5 +1,5 @@
 # -----------------------------------------------------------------------------
-# certain compilations options
+# Certain compilations options
 # -----------------------------------------------------------------------------
 # Copyright (c) 2012 Ben Blazak <benblazak.dev@gmail.com>
 # Released under The MIT License (MIT) (see "license.md")
@@ -7,16 +7,14 @@
 # -----------------------------------------------------------------------------
 
 
-TARGET   := firmware  # the name we want for our program binary
 KEYBOARD := ergodox   # keyboard model; see "src/keyboard" for what's available
-LAYOUT   := qwerty-kinesis-mod  # keyboard layout
-				# see "src/keyboard/*/layout" for what's
-				# available
+                      # see "src/keyboard/*/layout" for what's available
+LAYOUT   := frohliq   # keyboard layout
+TARGET   := $(LAYOUT)Firmware # the name we want for our program binary
 
 LED_BRIGHTNESS := 0.5  # a multiplier, with 1 being the max
 DEBOUNCE_TIME := 5  # in ms; see keyswitch spec for necessary value; 5ms should
-		    #   be good for cherry mx switches
-
+                    # be good for cherry mx switches
 
 # remove whitespace
 TARGET        := $(strip $(TARGET))

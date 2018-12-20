@@ -197,7 +197,7 @@ void kbfun_layer_push_1(void) {
  *   for each state:
  *  1) One time down (set on key press) - The layer was not active and the key
  *      has been pressed but not yet released. The layer is pushed in the one
- *      time down state. 
+ *      time down state.
  *  2) One time up (set on key release) - The layer was active when the layer
  *      sticky key was released. If a key on this layer (not set to
  *      transparent) was pressed before the key was released, the layer will be
